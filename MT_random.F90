@@ -192,162 +192,432 @@ MODULE MT_random
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    INTERFACE next_random
       MODULE PROCEDURE next_random_integer_isp
+#if __MAX_RANK > 0
       MODULE PROCEDURE next_random_integer_isp_1d
+#if __MAX_RANK > 1
       MODULE PROCEDURE next_random_integer_isp_2d
+#if __MAX_RANK > 2
       MODULE PROCEDURE next_random_integer_isp_3d
+#if __MAX_RANK > 3
       MODULE PROCEDURE next_random_integer_isp_4d
+#if __MAX_RANK > 4
       MODULE PROCEDURE next_random_integer_isp_5d
+#if __MAX_RANK > 5
       MODULE PROCEDURE next_random_integer_isp_6d
+#if __MAX_RANK > 6
       MODULE PROCEDURE next_random_integer_isp_7d
+#if __MAX_RANK > 7
       MODULE PROCEDURE next_random_integer_isp_8d
+#if __MAX_RANK > 8
       MODULE PROCEDURE next_random_integer_isp_9d
+#if __MAX_RANK > 9
       MODULE PROCEDURE next_random_integer_isp_10d
+#if __MAX_RANK > 10
       MODULE PROCEDURE next_random_integer_isp_11d
+#if __MAX_RANK > 11
       MODULE PROCEDURE next_random_integer_isp_12d
+#if __MAX_RANK > 12
       MODULE PROCEDURE next_random_integer_isp_13d
+#if __MAX_RANK > 13
       MODULE PROCEDURE next_random_integer_isp_14d
+#if __MAX_RANK > 14
       MODULE PROCEDURE next_random_integer_isp_15d
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
 
       MODULE PROCEDURE next_random_integer_idp
+#if __MAX_RANK > 0
       MODULE PROCEDURE next_random_integer_idp_1d
+#if __MAX_RANK > 1
       MODULE PROCEDURE next_random_integer_idp_2d
+#if __MAX_RANK > 2
       MODULE PROCEDURE next_random_integer_idp_3d
+#if __MAX_RANK > 3
       MODULE PROCEDURE next_random_integer_idp_4d
+#if __MAX_RANK > 4
       MODULE PROCEDURE next_random_integer_idp_5d
+#if __MAX_RANK > 5
       MODULE PROCEDURE next_random_integer_idp_6d
+#if __MAX_RANK > 6
       MODULE PROCEDURE next_random_integer_idp_7d
+#if __MAX_RANK > 7
       MODULE PROCEDURE next_random_integer_idp_8d
+#if __MAX_RANK > 8
       MODULE PROCEDURE next_random_integer_idp_9d
+#if __MAX_RANK > 9
       MODULE PROCEDURE next_random_integer_idp_10d
+#if __MAX_RANK > 10
       MODULE PROCEDURE next_random_integer_idp_11d
+#if __MAX_RANK > 11
       MODULE PROCEDURE next_random_integer_idp_12d
+#if __MAX_RANK > 12
       MODULE PROCEDURE next_random_integer_idp_13d
+#if __MAX_RANK > 13
       MODULE PROCEDURE next_random_integer_idp_14d
+#if __MAX_RANK > 14
       MODULE PROCEDURE next_random_integer_idp_15d
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
 
 #ifdef __HAS_IQP
       MODULE PROCEDURE next_random_integer_iqp
+#if __MAX_RANK > 0
       MODULE PROCEDURE next_random_integer_iqp_1d
+#if __MAX_RANK > 1
       MODULE PROCEDURE next_random_integer_iqp_2d
+#if __MAX_RANK > 2
       MODULE PROCEDURE next_random_integer_iqp_3d
+#if __MAX_RANK > 3
       MODULE PROCEDURE next_random_integer_iqp_4d
+#if __MAX_RANK > 4
       MODULE PROCEDURE next_random_integer_iqp_5d
+#if __MAX_RANK > 5
       MODULE PROCEDURE next_random_integer_iqp_6d
+#if __MAX_RANK > 6
       MODULE PROCEDURE next_random_integer_iqp_7d
+#if __MAX_RANK > 7
       MODULE PROCEDURE next_random_integer_iqp_8d
+#if __MAX_RANK > 8
       MODULE PROCEDURE next_random_integer_iqp_9d
+#if __MAX_RANK > 9
       MODULE PROCEDURE next_random_integer_iqp_10d
+#if __MAX_RANK > 10
       MODULE PROCEDURE next_random_integer_iqp_11d
+#if __MAX_RANK > 11
       MODULE PROCEDURE next_random_integer_iqp_12d
+#if __MAX_RANK > 12
       MODULE PROCEDURE next_random_integer_iqp_13d
+#if __MAX_RANK > 13
       MODULE PROCEDURE next_random_integer_iqp_14d
+#if __MAX_RANK > 14
       MODULE PROCEDURE next_random_integer_iqp_15d
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
 #endif
 
       MODULE PROCEDURE next_random_uniform_sp
+#if __MAX_RANK > 0
       MODULE PROCEDURE next_random_uniform_sp_1d
+#if __MAX_RANK > 1
       MODULE PROCEDURE next_random_uniform_sp_2d
+#if __MAX_RANK > 2
       MODULE PROCEDURE next_random_uniform_sp_3d
+#if __MAX_RANK > 3
       MODULE PROCEDURE next_random_uniform_sp_4d
+#if __MAX_RANK > 4
       MODULE PROCEDURE next_random_uniform_sp_5d
+#if __MAX_RANK > 5
       MODULE PROCEDURE next_random_uniform_sp_6d
+#if __MAX_RANK > 6
       MODULE PROCEDURE next_random_uniform_sp_7d
+#if __MAX_RANK > 7
       MODULE PROCEDURE next_random_uniform_sp_8d
+#if __MAX_RANK > 8
       MODULE PROCEDURE next_random_uniform_sp_9d
+#if __MAX_RANK > 9
       MODULE PROCEDURE next_random_uniform_sp_10d
+#if __MAX_RANK > 10
       MODULE PROCEDURE next_random_uniform_sp_11d
+#if __MAX_RANK > 11
       MODULE PROCEDURE next_random_uniform_sp_12d
+#if __MAX_RANK > 12
       MODULE PROCEDURE next_random_uniform_sp_13d
+#if __MAX_RANK > 13
       MODULE PROCEDURE next_random_uniform_sp_14d
+#if __MAX_RANK > 14
       MODULE PROCEDURE next_random_uniform_sp_15d
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
 
       MODULE PROCEDURE next_random_uniform_dp
+#if __MAX_RANK > 0
       MODULE PROCEDURE next_random_uniform_dp_1d
+#if __MAX_RANK > 1
       MODULE PROCEDURE next_random_uniform_dp_2d
+#if __MAX_RANK > 2
       MODULE PROCEDURE next_random_uniform_dp_3d
+#if __MAX_RANK > 3
       MODULE PROCEDURE next_random_uniform_dp_4d
+#if __MAX_RANK > 4
       MODULE PROCEDURE next_random_uniform_dp_5d
+#if __MAX_RANK > 5
       MODULE PROCEDURE next_random_uniform_dp_6d
+#if __MAX_RANK > 6
       MODULE PROCEDURE next_random_uniform_dp_7d
+#if __MAX_RANK > 7
       MODULE PROCEDURE next_random_uniform_dp_8d
+#if __MAX_RANK > 8
       MODULE PROCEDURE next_random_uniform_dp_9d
+#if __MAX_RANK > 9
       MODULE PROCEDURE next_random_uniform_dp_10d
+#if __MAX_RANK > 10
       MODULE PROCEDURE next_random_uniform_dp_11d
+#if __MAX_RANK > 11
       MODULE PROCEDURE next_random_uniform_dp_12d
+#if __MAX_RANK > 12
       MODULE PROCEDURE next_random_uniform_dp_13d
+#if __MAX_RANK > 13
       MODULE PROCEDURE next_random_uniform_dp_14d
+#if __MAX_RANK > 14
       MODULE PROCEDURE next_random_uniform_dp_15d
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
 
 #ifdef __HAS_QP
       MODULE PROCEDURE next_random_uniform_qp
+#if __MAX_RANK > 0
       MODULE PROCEDURE next_random_uniform_qp_1d
+#if __MAX_RANK > 1
       MODULE PROCEDURE next_random_uniform_qp_2d
+#if __MAX_RANK > 2
       MODULE PROCEDURE next_random_uniform_qp_3d
+#if __MAX_RANK > 3
       MODULE PROCEDURE next_random_uniform_qp_4d
+#if __MAX_RANK > 4
       MODULE PROCEDURE next_random_uniform_qp_5d
+#if __MAX_RANK > 5
       MODULE PROCEDURE next_random_uniform_qp_6d
+#if __MAX_RANK > 6
       MODULE PROCEDURE next_random_uniform_qp_7d
+#if __MAX_RANK > 7
       MODULE PROCEDURE next_random_uniform_qp_8d
+#if __MAX_RANK > 8
       MODULE PROCEDURE next_random_uniform_qp_9d
+#if __MAX_RANK > 9
       MODULE PROCEDURE next_random_uniform_qp_10d
+#if __MAX_RANK > 10
       MODULE PROCEDURE next_random_uniform_qp_11d
+#if __MAX_RANK > 11
       MODULE PROCEDURE next_random_uniform_qp_12d
+#if __MAX_RANK > 12
       MODULE PROCEDURE next_random_uniform_qp_13d
+#if __MAX_RANK > 13
       MODULE PROCEDURE next_random_uniform_qp_14d
+#if __MAX_RANK > 14
       MODULE PROCEDURE next_random_uniform_qp_15d
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
 #endif
 
       MODULE PROCEDURE next_random_gaussian_sp
+#if __MAX_RANK > 0
       MODULE PROCEDURE next_random_gaussian_sp_1d
+#if __MAX_RANK > 1
       MODULE PROCEDURE next_random_gaussian_sp_2d
+#if __MAX_RANK > 2
       MODULE PROCEDURE next_random_gaussian_sp_3d
+#if __MAX_RANK > 3
       MODULE PROCEDURE next_random_gaussian_sp_4d
+#if __MAX_RANK > 4
       MODULE PROCEDURE next_random_gaussian_sp_5d
+#if __MAX_RANK > 5
       MODULE PROCEDURE next_random_gaussian_sp_6d
+#if __MAX_RANK > 6
       MODULE PROCEDURE next_random_gaussian_sp_7d
+#if __MAX_RANK > 7
       MODULE PROCEDURE next_random_gaussian_sp_8d
+#if __MAX_RANK > 8
       MODULE PROCEDURE next_random_gaussian_sp_9d
+#if __MAX_RANK > 9
       MODULE PROCEDURE next_random_gaussian_sp_10d
+#if __MAX_RANK > 10
       MODULE PROCEDURE next_random_gaussian_sp_11d
+#if __MAX_RANK > 11
       MODULE PROCEDURE next_random_gaussian_sp_12d
+#if __MAX_RANK > 12
       MODULE PROCEDURE next_random_gaussian_sp_13d
+#if __MAX_RANK > 13
       MODULE PROCEDURE next_random_gaussian_sp_14d
+#if __MAX_RANK > 14
       MODULE PROCEDURE next_random_gaussian_sp_15d
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
 
       MODULE PROCEDURE next_random_gaussian_dp
+#if __MAX_RANK > 0
       MODULE PROCEDURE next_random_gaussian_dp_1d
+#if __MAX_RANK > 1
       MODULE PROCEDURE next_random_gaussian_dp_2d
+#if __MAX_RANK > 2
       MODULE PROCEDURE next_random_gaussian_dp_3d
+#if __MAX_RANK > 3
       MODULE PROCEDURE next_random_gaussian_dp_4d
+#if __MAX_RANK > 4
       MODULE PROCEDURE next_random_gaussian_dp_5d
+#if __MAX_RANK > 5
       MODULE PROCEDURE next_random_gaussian_dp_6d
+#if __MAX_RANK > 6
       MODULE PROCEDURE next_random_gaussian_dp_7d
+#if __MAX_RANK > 7
       MODULE PROCEDURE next_random_gaussian_dp_8d
+#if __MAX_RANK > 8
       MODULE PROCEDURE next_random_gaussian_dp_9d
+#if __MAX_RANK > 9
       MODULE PROCEDURE next_random_gaussian_dp_10d
+#if __MAX_RANK > 10
       MODULE PROCEDURE next_random_gaussian_dp_11d
+#if __MAX_RANK > 11
       MODULE PROCEDURE next_random_gaussian_dp_12d
+#if __MAX_RANK > 12
       MODULE PROCEDURE next_random_gaussian_dp_13d
+#if __MAX_RANK > 13
       MODULE PROCEDURE next_random_gaussian_dp_14d
+#if __MAX_RANK > 14
       MODULE PROCEDURE next_random_gaussian_dp_15d
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
 
 #ifdef __HAS_QP
       MODULE PROCEDURE next_random_gaussian_qp
+#if __MAX_RANK > 0
       MODULE PROCEDURE next_random_gaussian_qp_1d
+#if __MAX_RANK > 1
       MODULE PROCEDURE next_random_gaussian_qp_2d
+#if __MAX_RANK > 2
       MODULE PROCEDURE next_random_gaussian_qp_3d
+#if __MAX_RANK > 3
       MODULE PROCEDURE next_random_gaussian_qp_4d
+#if __MAX_RANK > 4
       MODULE PROCEDURE next_random_gaussian_qp_5d
+#if __MAX_RANK > 5
       MODULE PROCEDURE next_random_gaussian_qp_6d
+#if __MAX_RANK > 6
       MODULE PROCEDURE next_random_gaussian_qp_7d
+#if __MAX_RANK > 7
       MODULE PROCEDURE next_random_gaussian_qp_8d
+#if __MAX_RANK > 8
       MODULE PROCEDURE next_random_gaussian_qp_9d
+#if __MAX_RANK > 9
       MODULE PROCEDURE next_random_gaussian_qp_10d
+#if __MAX_RANK > 10
       MODULE PROCEDURE next_random_gaussian_qp_11d
+#if __MAX_RANK > 11
       MODULE PROCEDURE next_random_gaussian_qp_12d
+#if __MAX_RANK > 12
       MODULE PROCEDURE next_random_gaussian_qp_13d
+#if __MAX_RANK > 13
       MODULE PROCEDURE next_random_gaussian_qp_14d
+#if __MAX_RANK > 14
       MODULE PROCEDURE next_random_gaussian_qp_15d
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
 #endif
 
    END INTERFACE next_random
@@ -1179,6 +1449,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_isp
 
+#if __MAX_RANK > 0
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 1D array
@@ -1209,6 +1480,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_isp_1d
 
+#if __MAX_RANK > 1
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 2D array
@@ -1241,6 +1513,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_isp_2d
 
+#if __MAX_RANK > 2
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 3D array
@@ -1275,6 +1548,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_isp_3d
 
+#if __MAX_RANK > 3
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 4D array
@@ -1311,6 +1585,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_isp_4d
 
+#if __MAX_RANK > 4
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 5D array
@@ -1349,6 +1624,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_isp_5d
 
+#if __MAX_RANK > 5
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 6D array
@@ -1389,6 +1665,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_isp_6d
 
+#if __MAX_RANK > 6
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 7D array
@@ -1431,6 +1708,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_isp_7d
 
+#if __MAX_RANK > 7
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 8D array
@@ -1475,6 +1753,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_isp_8d
 
+#if __MAX_RANK > 8
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 9D array
@@ -1521,6 +1800,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_isp_9d
 
+#if __MAX_RANK > 9
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 10D array
@@ -1569,6 +1849,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_isp_10d
 
+#if __MAX_RANK > 10
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 11D array
@@ -1619,6 +1900,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_isp_11d
 
+#if __MAX_RANK > 11
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 12D array
@@ -1671,6 +1953,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_isp_12d
 
+#if __MAX_RANK > 12
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 13D array
@@ -1725,6 +2008,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_isp_13d
 
+#if __MAX_RANK > 13
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 14D array
@@ -1781,6 +2065,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_isp_14d
 
+#if __MAX_RANK > 14
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 15D array
@@ -1838,6 +2123,21 @@ CONTAINS
       RETURN
 
    END SUBROUTINE next_random_integer_isp_15d
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
 
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
@@ -1859,6 +2159,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_idp
 
+#if __MAX_RANK > 0
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 1D array
@@ -1889,6 +2190,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_idp_1d
 
+#if __MAX_RANK > 1
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 2D array
@@ -1921,6 +2223,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_idp_2d
 
+#if __MAX_RANK > 2
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 3D array
@@ -1955,6 +2258,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_idp_3d
 
+#if __MAX_RANK > 3
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 4D array
@@ -1991,6 +2295,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_idp_4d
 
+#if __MAX_RANK > 4
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 5D array
@@ -2029,6 +2334,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_idp_5d
 
+#if __MAX_RANK > 5
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 6D array
@@ -2069,6 +2375,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_idp_6d
 
+#if __MAX_RANK > 6
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 7D array
@@ -2111,6 +2418,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_idp_7d
 
+#if __MAX_RANK > 7
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 8D array
@@ -2155,6 +2463,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_idp_8d
 
+#if __MAX_RANK > 8
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 9D array
@@ -2201,6 +2510,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_idp_9d
 
+#if __MAX_RANK > 9
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 10D array
@@ -2249,6 +2559,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_idp_10d
 
+#if __MAX_RANK > 10
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 11D array
@@ -2299,6 +2610,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_idp_11d
 
+#if __MAX_RANK > 11
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 12D array
@@ -2351,6 +2663,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_idp_12d
 
+#if __MAX_RANK > 12
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 13D array
@@ -2405,6 +2718,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_idp_13d
 
+#if __MAX_RANK > 13
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 14D array
@@ -2461,6 +2775,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_idp_14d
 
+#if __MAX_RANK > 14
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 15D array
@@ -2518,6 +2833,21 @@ CONTAINS
       RETURN
 
    END SUBROUTINE next_random_integer_idp_15d
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
 
 #ifdef __HAS_IQP
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -2540,6 +2870,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_iqp
 
+#if __MAX_RANK > 0
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 1D array
@@ -2570,6 +2901,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_iqp_1d
 
+#if __MAX_RANK > 1
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 2D array
@@ -2602,6 +2934,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_iqp_2d
 
+#if __MAX_RANK > 2
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 3D array
@@ -2636,6 +2969,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_iqp_3d
 
+#if __MAX_RANK > 3
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 4D array
@@ -2672,6 +3006,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_iqp_4d
 
+#if __MAX_RANK > 4
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 5D array
@@ -2710,6 +3045,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_iqp_5d
 
+#if __MAX_RANK > 5
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 6D array
@@ -2750,6 +3086,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_iqp_6d
 
+#if __MAX_RANK > 6
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 7D array
@@ -2792,6 +3129,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_iqp_7d
 
+#if __MAX_RANK > 7
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 8D array
@@ -2836,6 +3174,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_iqp_8d
 
+#if __MAX_RANK > 8
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 9D array
@@ -2882,6 +3221,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_iqp_9d
 
+#if __MAX_RANK > 9
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 10D array
@@ -2930,6 +3270,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_iqp_10d
 
+#if __MAX_RANK > 10
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 11D array
@@ -2980,6 +3321,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_iqp_11d
 
+#if __MAX_RANK > 11
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 12D array
@@ -3032,6 +3374,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_iqp_12d
 
+#if __MAX_RANK > 12
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 13D array
@@ -3086,6 +3429,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_iqp_13d
 
+#if __MAX_RANK > 13
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 14D array
@@ -3142,6 +3486,7 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_iqp_14d
 
+#if __MAX_RANK > 14
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next integer random number for an 15D array
@@ -3200,6 +3545,21 @@ CONTAINS
 
    END SUBROUTINE next_random_integer_iqp_15d
 #endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
 
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
@@ -3222,6 +3582,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_sp
 
+#if __MAX_RANK > 0
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniformly distributed random number for an 1D array
@@ -3252,6 +3613,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_sp_1d
 
+#if __MAX_RANK > 1
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniformly distributed random number for an 2D array
@@ -3284,6 +3646,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_sp_2d
 
+#if __MAX_RANK > 2
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniformly distributed random number for an 3D array
@@ -3318,6 +3681,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_sp_3d
 
+#if __MAX_RANK > 3
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniformly distributed random number for an 4D array
@@ -3354,6 +3718,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_sp_4d
 
+#if __MAX_RANK > 4
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniformly distributed random number for an 5D array
@@ -3392,6 +3757,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_sp_5d
 
+#if __MAX_RANK > 5
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniformly distributed random number for an 6D array
@@ -3432,6 +3798,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_sp_6d
 
+#if __MAX_RANK > 6
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniformly distributed random number for an 7D array
@@ -3474,6 +3841,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_sp_7d
 
+#if __MAX_RANK > 7
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniform random number for an 8D array
@@ -3518,6 +3886,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_sp_8d
 
+#if __MAX_RANK > 8
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniform random number for an 9D array
@@ -3564,6 +3933,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_sp_9d
 
+#if __MAX_RANK > 9
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniform random number for an 10D array
@@ -3612,6 +3982,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_sp_10d
 
+#if __MAX_RANK > 10
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniform random number for an 11D array
@@ -3662,6 +4033,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_sp_11d
 
+#if __MAX_RANK > 11
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniform random number for an 12D array
@@ -3714,6 +4086,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_sp_12d
 
+#if __MAX_RANK > 12
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniform random number for an 13D array
@@ -3768,6 +4141,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_sp_13d
 
+#if __MAX_RANK > 13
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniform random number for an 14D array
@@ -3824,6 +4198,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_sp_14d
 
+#if __MAX_RANK > 14
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniform random number for an 15D array
@@ -3881,6 +4256,21 @@ CONTAINS
       RETURN
 
    END SUBROUTINE next_random_uniform_sp_15d
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
 
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
@@ -3905,6 +4295,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_dp
 
+#if __MAX_RANK > 0
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniformly distributed random number for an 1D array
@@ -3935,6 +4326,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_dp_1d
 
+#if __MAX_RANK > 1
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniformly distributed random number for an 2D array
@@ -3967,6 +4359,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_dp_2d
 
+#if __MAX_RANK > 2
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniformly distributed random number for an 3D array
@@ -4001,6 +4394,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_dp_3d
 
+#if __MAX_RANK > 3
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniformly distributed random number for an 4D array
@@ -4037,6 +4431,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_dp_4d
 
+#if __MAX_RANK > 4
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniformly distributed random number for an 5D array
@@ -4075,6 +4470,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_dp_5d
 
+#if __MAX_RANK > 5
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniformly distributed random number for an 6D array
@@ -4115,6 +4511,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_dp_6d
 
+#if __MAX_RANK > 6
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniformly distributed random number for an 7D array
@@ -4157,6 +4554,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_dp_7d
 
+#if __MAX_RANK > 7
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniform random number for an 8D array
@@ -4201,6 +4599,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_dp_8d
 
+#if __MAX_RANK > 8
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniform random number for an 9D array
@@ -4247,6 +4646,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_dp_9d
 
+#if __MAX_RANK > 9
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniform random number for an 10D array
@@ -4295,6 +4695,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_dp_10d
 
+#if __MAX_RANK > 10
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniform random number for an 11D array
@@ -4345,6 +4746,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_dp_11d
 
+#if __MAX_RANK > 11
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniform random number for an 12D array
@@ -4397,6 +4799,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_dp_12d
 
+#if __MAX_RANK > 12
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniform random number for an 13D array
@@ -4451,6 +4854,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_dp_13d
 
+#if __MAX_RANK > 13
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniform random number for an 14D array
@@ -4507,6 +4911,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_dp_14d
 
+#if __MAX_RANK > 14
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniform random number for an 15D array
@@ -4564,6 +4969,21 @@ CONTAINS
       RETURN
 
    END SUBROUTINE next_random_uniform_dp_15d
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
 
 #ifdef __HAS_QP
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -4589,6 +5009,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_qp
 
+#if __MAX_RANK > 0
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniformly distributed random number for an 1D array
@@ -4619,6 +5040,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_qp_1d
 
+#if __MAX_RANK > 1
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniformly distributed random number for an 2D array
@@ -4651,6 +5073,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_qp_2d
 
+#if __MAX_RANK > 2
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniformly distributed random number for an 3D array
@@ -4685,6 +5108,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_qp_3d
 
+#if __MAX_RANK > 3
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniformly distributed random number for an 4D array
@@ -4721,6 +5145,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_qp_4d
 
+#if __MAX_RANK > 4
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniformly distributed random number for an 5D array
@@ -4759,6 +5184,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_qp_5d
 
+#if __MAX_RANK > 5
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniformly distributed random number for an 6D array
@@ -4799,6 +5225,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_qp_6d
 
+#if __MAX_RANK > 6
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniformly distributed random number for an 7D array
@@ -4841,6 +5268,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_qp_7d
 
+#if __MAX_RANK > 7
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniform random number for an 8D array
@@ -4885,6 +5313,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_qp_8d
 
+#if __MAX_RANK > 8
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniform random number for an 9D array
@@ -4931,6 +5360,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_qp_9d
 
+#if __MAX_RANK > 9
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniform random number for an 10D array
@@ -4979,6 +5409,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_qp_10d
 
+#if __MAX_RANK > 10
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniform random number for an 11D array
@@ -5029,6 +5460,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_qp_11d
 
+#if __MAX_RANK > 11
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniform random number for an 12D array
@@ -5081,6 +5513,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_qp_12d
 
+#if __MAX_RANK > 12
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniform random number for an 13D array
@@ -5135,6 +5568,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_qp_13d
 
+#if __MAX_RANK > 13
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniform random number for an 14D array
@@ -5191,6 +5625,7 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_qp_14d
 
+#if __MAX_RANK > 14
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next uniform random number for an 15D array
@@ -5249,6 +5684,21 @@ CONTAINS
 
    END SUBROUTINE next_random_uniform_qp_15d
 #endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
 
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
@@ -5272,6 +5722,7 @@ CONTAINS
       RETURN
    END SUBROUTINE next_random_gaussian_sp
 
+#if __MAX_RANK > 0
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 1D array
@@ -5302,6 +5753,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_sp_1d
 
+#if __MAX_RANK > 1
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 2D array
@@ -5334,6 +5786,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_sp_2d
 
+#if __MAX_RANK > 2
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 3D array
@@ -5368,6 +5821,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_sp_3d
 
+#if __MAX_RANK > 3
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 4D array
@@ -5404,6 +5858,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_sp_4d
 
+#if __MAX_RANK > 4
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 5D array
@@ -5442,6 +5897,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_sp_5d
 
+#if __MAX_RANK > 5
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 6D array
@@ -5482,6 +5938,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_sp_6d
 
+#if __MAX_RANK > 6
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 7D array
@@ -5524,6 +5981,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_sp_7d
 
+#if __MAX_RANK > 7
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 8D array
@@ -5568,6 +6026,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_sp_8d
 
+#if __MAX_RANK > 8
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 9D array
@@ -5614,6 +6073,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_sp_9d
 
+#if __MAX_RANK > 9
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 10D array
@@ -5662,6 +6122,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_sp_10d
 
+#if __MAX_RANK > 10
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 11D array
@@ -5712,6 +6173,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_sp_11d
 
+#if __MAX_RANK > 11
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 12D array
@@ -5764,6 +6226,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_sp_12d
 
+#if __MAX_RANK > 12
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 13D array
@@ -5818,6 +6281,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_sp_13d
 
+#if __MAX_RANK > 13
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 14D array
@@ -5874,6 +6338,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_sp_14d
 
+#if __MAX_RANK > 14
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 15D array
@@ -5931,6 +6396,21 @@ CONTAINS
       RETURN
 
    END SUBROUTINE next_random_gaussian_sp_15d
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
 
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
@@ -6014,6 +6494,7 @@ CONTAINS
       RETURN
    END SUBROUTINE next_random_gaussian_dp_polar
 
+#if __MAX_RANK > 0
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 1D array
@@ -6044,6 +6525,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_dp_1d
 
+#if __MAX_RANK > 1
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 2D array
@@ -6076,6 +6558,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_dp_2d
 
+#if __MAX_RANK > 2
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 3D array
@@ -6110,6 +6593,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_dp_3d
 
+#if __MAX_RANK > 3
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 4D array
@@ -6146,6 +6630,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_dp_4d
 
+#if __MAX_RANK > 4
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 5D array
@@ -6184,6 +6669,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_dp_5d
 
+#if __MAX_RANK > 5
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 6D array
@@ -6224,6 +6710,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_dp_6d
 
+#if __MAX_RANK > 6
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 7D array
@@ -6266,6 +6753,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_dp_7d
 
+#if __MAX_RANK > 7
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 8D array
@@ -6310,6 +6798,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_dp_8d
 
+#if __MAX_RANK > 8
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 9D array
@@ -6356,6 +6845,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_dp_9d
 
+#if __MAX_RANK > 9
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 10D array
@@ -6404,6 +6894,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_dp_10d
 
+#if __MAX_RANK > 10
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 11D array
@@ -6454,6 +6945,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_dp_11d
 
+#if __MAX_RANK > 11
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 12D array
@@ -6506,6 +6998,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_dp_12d
 
+#if __MAX_RANK > 12
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 13D array
@@ -6560,6 +7053,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_dp_13d
 
+#if __MAX_RANK > 13
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 14D array
@@ -6616,6 +7110,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_dp_14d
 
+#if __MAX_RANK > 14
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 15D array
@@ -6673,6 +7168,21 @@ CONTAINS
       RETURN
 
    END SUBROUTINE next_random_gaussian_dp_15d
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
 
 #ifdef __HAS_QP
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -6697,6 +7207,7 @@ CONTAINS
       RETURN
    END SUBROUTINE next_random_gaussian_qp
 
+#if __MAX_RANK > 0
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 1D array
@@ -6727,6 +7238,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_qp_1d
 
+#if __MAX_RANK > 1
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 2D array
@@ -6759,6 +7271,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_qp_2d
 
+#if __MAX_RANK > 2
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 3D array
@@ -6793,6 +7306,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_qp_3d
 
+#if __MAX_RANK > 3
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 4D array
@@ -6829,6 +7343,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_qp_4d
 
+#if __MAX_RANK > 4
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 5D array
@@ -6867,6 +7382,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_qp_5d
 
+#if __MAX_RANK > 5
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 6D array
@@ -6907,6 +7423,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_qp_6d
 
+#if __MAX_RANK > 6
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 7D array
@@ -6949,6 +7466,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_qp_7d
 
+#if __MAX_RANK > 7
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 8D array
@@ -6993,6 +7511,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_qp_8d
 
+#if __MAX_RANK > 8
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 9D array
@@ -7039,6 +7558,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_qp_9d
 
+#if __MAX_RANK > 9
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 10D array
@@ -7087,6 +7607,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_qp_10d
 
+#if __MAX_RANK > 10
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 11D array
@@ -7137,6 +7658,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_qp_11d
 
+#if __MAX_RANK > 11
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 12D array
@@ -7189,6 +7711,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_qp_12d
 
+#if __MAX_RANK > 12
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 13D array
@@ -7243,6 +7766,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_qp_13d
 
+#if __MAX_RANK > 13
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 14D array
@@ -7299,6 +7823,7 @@ CONTAINS
 
    END SUBROUTINE next_random_gaussian_qp_14d
 
+#if __MAX_RANK > 14
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! Description:
    !!    Generates the next gaussian distributed random number for an 15D array
@@ -7356,6 +7881,21 @@ CONTAINS
       RETURN
 
    END SUBROUTINE next_random_gaussian_qp_15d
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
+#endif
 #endif
 
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
