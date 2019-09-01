@@ -6,15 +6,15 @@ FCFLAGS = -O3 -g -fcheck=all -fbacktrace \
 
 FCWFLAGS = -Wall -Wextra -Wpedantic -Wsurprising
 
-OUTLIB = ./MT_random.a
+OUTLIB = ./libMTrandom.a
 
 all: $(OUTLIB)
 
-$(OUTLIB): MT_random.o \
+$(OUTLIB): MTrandom.o \
            kinds.o
 	ar rvcs $@ $^
 
-MT_random.o: MT_random.F90 kinds.o
+MTrandom.o: MTrandom.F90 kinds.o
 	$(FC) $(FCFLAGS) $(FCWFLAGS) -c $<
 
 kinds.o: kinds.F90

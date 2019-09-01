@@ -6,7 +6,7 @@
 !!    arbritrarily many independend streams.
 !! Usage:
 !!    Import the module:
-!!       USE MT_random
+!!       USE MTrandom
 !!    Define a variable to hold the RNG state for uniform random numbers:
 !!       TYPE(rng_uniform_type) :: rng_stateu
 !!    For gaussian random numbers:
@@ -29,7 +29,7 @@
 !!       CALL restore_random_state(state_string, rng_state)
 !!    There is no need for deallocating anything
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-MODULE MT_random
+MODULE MTrandom
 
    USE, INTRINSIC :: ISO_FORTRAN_ENV
 #ifdef __HAS_QP
@@ -8018,4 +8018,4 @@ CONTAINS
 
    END SUBROUTINE restore_random_state_gaussian
 
-END MODULE MT_random
+END MODULE MTrandom
