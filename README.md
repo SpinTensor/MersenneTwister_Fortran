@@ -8,7 +8,9 @@ Description:
 
 Compilation:
    Adjust the compiler and flags in the Makefile
-   type "make"
+   type "make" to build
+   type "make test" to run tests
+   
 
    There are three adjustment possibilities for your fortran standard.
    Add these to the FCFLAGS in the Makefile

@@ -12,10 +12,19 @@ MTrandom.o: MTrandom.F90 kinds.o
 kinds.o: kinds.F90
 	$(FC) $(FCFLAGS) $(FCWFLAGS) -c $<
 
-.PHONY: clean distclean
+.PHONY: test buildtest runtest clean distclean
+
+test: $(OUTLIB)
+	(cd test; make test)
+buildtest: $(OUTLIB)
+	(cd test; make buildtest)
+runtest: $(OUTLIB)
+	(cd test; make runtest)
 
 clean:
 	rm -f *.o *.mod 
+	(cd test; make clean)
 
 distclean: clean
 	rm -f $(OUTLIB)
+	(cd test; make distclean)
