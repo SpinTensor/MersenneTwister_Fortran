@@ -48,3 +48,5 @@ Usage:
       CALL restore_random_state(state_string, rng_state)
    There is no need for deallocating anything
 
+TODO:
+   - Add polar method for gaussian random number generation, as it is faster
